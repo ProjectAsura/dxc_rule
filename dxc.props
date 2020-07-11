@@ -5,8 +5,16 @@
     <DXCTask>
       <!--Enter Defaults Here-->
       <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <HeaderFileOutput>$(OutDir)%(Filename).inc</HeaderFileOutput>
       <AdditionalOptions></AdditionalOptions>
       <EntryPointName>main</EntryPointName>
+      <ShaderModel>_6_5</ShaderModel>
+      <TreatWarningAsError>True</TreatWarningAsError>
+      <SuppressStartupBanner>True</SuppressStartupBanner>
+      <EnableDebuggingInformation Condition="'$(Configuration)' == 'Debug'">True</EnableDebuggingInformation>
+      <EnableDebuggingInformation Condition="!('$(Configuration)' == 'Debug')">False</EnableDebuggingInformation>
+      <DisableOptimizations Condition="'$(Configuration)' == 'Debug'">True</DisableOptimizations>
+      <DisableOptimizations Condition="!('$(Configuration)' == 'Debug')">False</DisableOptimizations>
       <CommandLineTemplate>dxc.exe [AllOptions] [Inputs]</CommandLineTemplate>
     </DXCTask>
   </ItemDefinitionGroup>
