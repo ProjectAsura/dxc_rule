@@ -11,6 +11,7 @@
       <ShaderModel>_6_5</ShaderModel>
       <TreatWarningAsError>True</TreatWarningAsError>
       <SuppressStartupBanner>True</SuppressStartupBanner>
+      <VariableName>%(Filename)</VariableName>
       <EnableDebuggingInformation Condition="'$(Configuration)' == 'Debug'">True</EnableDebuggingInformation>
       <EnableDebuggingInformation Condition="!('$(Configuration)' == 'Debug')">False</EnableDebuggingInformation>
       <DisableOptimizations Condition="'$(Configuration)' == 'Debug'">True</DisableOptimizations>

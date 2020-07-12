@@ -72,6 +72,7 @@
  
     <StringListProperty Name="PreprocessorDefinitions" DisplayName="プリプロセッサの定義" Description="ソース ファイルの前処理シンボルを定義します。" Category="General" Switch="D " />
 
+    <StringProperty Name="VariableName" DisplayName="ヘッダー変数名" Description="ヘッダー ファイル内の変数名を指定します (-Vn [名前])" Category="Output Files" Switch="Vn" F1Keyword="VC.Project.FXCompilerTool.VariableName"/>
     <StringProperty Subtype="file" Name="HeaderFileOutput" DisplayName="ヘッダー ファイル名" Description="オブジェクト コードを含むヘッダー ファイル名を指定します。(-Fh [名前])" Category="Output Files" Switch="Fh " />
     <StringProperty Subtype="file" Name="ReflectionFileOutput" DisplayName="リフレクション ファイル名" Description="シェーダリフレクションを出力するファイル名を指定します。(-Fre [名前])" Category="Output Files" Switch="Fre " />
     <StringProperty Subtype="file" Name="RootSignatureFileOutput" DisplayName="ルート署名 ファイル名" Description="ルート署名を出力するファイル名を指定します。(-Frs [名前])" Category="Output Files" Switch="Frs " />
